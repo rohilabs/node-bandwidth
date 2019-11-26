@@ -111,7 +111,9 @@ var dashboardAuth = {
 
 client.v2.Message.createMessagingApplication(dashboardAuth, {
     name: "My Messaging App",
-    callbackUrl: "http://my-callback",
+    voiceAppName: "My Messaging App",
+		callbackUrl: "http://my-callback",
+		voiceCallbackUrl: "http://my-voice-callback",
     locationName: "My Location",
     smsOptions: {
         enabled: true,
